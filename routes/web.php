@@ -25,3 +25,7 @@ Route::get('/games/{id}/edit',[GameController::class,'edit'])->name('games.edit'
 Route::delete('/games/{id}',[GameController::class,'destroy'])->middleware('game')->name('games.destroy');
 Route::get('/games/{id}',[GameController::class,'show'])->name('games.show');
 
+Route::get('/api-users-relax', function (){ return view('api.index');  });
+
+
+
